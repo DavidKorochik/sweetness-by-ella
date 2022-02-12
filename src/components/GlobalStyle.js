@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 
@@ -16,7 +16,8 @@ html{
 }
 
 body{
-    background: #1b1b1b;
+    /* background: #1b1b1b; */
+    background: #fefff6;
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
 }
@@ -25,19 +26,21 @@ button{
     font-size: 1.1.rem;
     cursor: pointer;
     padding: 1rem 2rem;
-    border: 3px solid #23d997;
+    border: 3px solid #42929d;
     background: transparent;
     color: white;
     transition: all 0.5s ease;
     font-family: 'Inter', sans-serif;
+    color: #84c3c8;
     &:hover{
-        background-color: #23d997;
+        background-color: #42929d;
         color: white;
     }
 }
     h2{
         font-weight: lighter;
         font-size: 4rem;
+        color: #42929d;
     }
     h3{
         color: white;
@@ -52,11 +55,12 @@ button{
     }
     span{
         font-weight: bold;
-        color:#23d997;
+        color:#42929d;
     }
     p{
         padding: 3rem 0rem;
-        color: #ccc;
+        /* color: #ccc; */
+        color: #84c3c8;
         font-size: 1.4rem;
         line-height: 150%;
     }

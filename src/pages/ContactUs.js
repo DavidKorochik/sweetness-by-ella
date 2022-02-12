@@ -1,17 +1,17 @@
-import React from "react";
+import React from 'react';
 //Animations
-import { motion } from "framer-motion";
-import { pageAnimation, titleAnim } from "../animation";
-import styled from "styled-components";
+import { motion } from 'framer-motion';
+import { pageAnimation, titleAnim } from '../animation';
+import styled from 'styled-components';
 
 const ContactUs = () => {
   return (
     <ContactStyle
-      exit="exit"
+      exit='exit'
       variants={pageAnimation}
-      initial="hidden"
-      animate="show"
-      style={{ background: "#fff" }}
+      initial='hidden'
+      animate='show'
+      style={{ background: '#fff' }}
     >
       <Title>
         <Hide>
@@ -22,19 +22,19 @@ const ContactUs = () => {
         <Hide>
           <Social variants={titleAnim}>
             <Circle />
-            <h2>Send Us A Message</h2>
+            <h2>Send Us A Message - +972532809038</h2>
           </Social>
         </Hide>
         <Hide>
           <Social variants={titleAnim}>
             <Circle />
-            <h2>Send an email.</h2>
+            <h2>Send an email - elyastankov@gmail.com</h2>
           </Social>
         </Hide>
         <Hide>
           <Social variants={titleAnim}>
             <Circle />
-            <h2>Social Media</h2>
+            <h2>Social Media - ella_stankov</h2>
           </Social>
         </Hide>
       </div>

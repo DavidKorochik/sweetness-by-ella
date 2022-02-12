@@ -10,12 +10,12 @@ const Nav = () => {
     <StyledNav>
       <h1>
         <Link id='logo' to='/'>
-          Capture
+          Sweetness By Ella
         </Link>
       </h1>
       <ul>
         <li>
-          <Link to='/'>About Us</Link>
+          <Link to='/'>About Me</Link>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: '0%' }}
@@ -50,12 +50,14 @@ const StyledNav = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 10rem;
-  background: #282828;
+  /* background: #282828; */
+  background: #f4f4e1;
   position: sticky;
   top: 0;
   z-index: 10;
   a {
-    color: white;
+    /* color: white; */
+    color: #42929d;
     text-decoration: none;
   }
   ul {

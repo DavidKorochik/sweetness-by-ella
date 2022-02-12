@@ -1,12 +1,12 @@
-import React from "react";
-import styled from "styled-components";
-import { Link } from "react-router-dom";
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 //Images
-import athlete from "../img/athlete-small.png";
-import theracer from "../img/theracer-small.png";
-import goodtimes from "../img/goodtimes-small.png";
+import athlete from '../img/athlete-small.png';
+import theracer from '../img/theracer-small.png';
+import goodtimes from '../img/goodtimes-small.png';
 //Animations
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 import {
   sliderContainer,
   slider,
@@ -14,20 +14,20 @@ import {
   fade,
   photoAnim,
   lineAnim,
-} from "../animation";
-import { useScroll } from "../components/useScroll";
-import ScrollTop from "../components/ScrollTop";
+} from '../animation';
+import { useScroll } from '../components/useScroll';
+import ScrollTop from '../components/ScrollTop';
 
 const OurWork = () => {
   const [element, controls] = useScroll();
   const [element2, controls2] = useScroll();
   return (
     <Work
-      style={{ background: "#fff" }}
-      exit="exit"
+      style={{ background: '#fff' }}
+      exit='exit'
       variants={pageAnimation}
-      initial="hidden"
-      animate="show"
+      initial='hidden'
+      animate='show'
     >
       <motion.div variants={sliderContainer}>
         <Frame1 variants={slider}></Frame1>
@@ -36,20 +36,27 @@ const OurWork = () => {
         <Frame4 variants={slider}></Frame4>
       </motion.div>
       <Movie>
-        <motion.h2 variants={fade}>The Athlete</motion.h2>
-        <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/the-athlete">
+        <motion.h2 variants={fade}>Strawberry Factory</motion.h2>
+        <motion.div variants={lineAnim} className='line'></motion.div>
+        <Link to='/work/the-athlete'>
           <Hide>
-            <motion.img variants={photoAnim} src={athlete} alt="athlete" />
+            <motion.img
+              variants={photoAnim}
+              src='https://images.unsplash.com/photo-1611293388250-580b08c4a145?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGNha2V8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
+              alt='athlete'
+            />
           </Hide>
         </Link>
       </Movie>
 
-      <Movie ref={element} variants={fade} animate={controls} initial="hidden">
-        <h2>The Racer</h2>
-        <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/the-racer">
-          <img src={theracer} alt="theracer" />
+      <Movie ref={element} variants={fade} animate={controls} initial='hidden'>
+        <h2>Cupcake Fantasy</h2>
+        <motion.div variants={lineAnim} className='line'></motion.div>
+        <Link to='/work/the-racer'>
+          <img
+            src='https://images.unsplash.com/photo-1572451479139-6a308211d8be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDV8fGNha2V8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
+            alt='theracer'
+          />
         </Link>
       </Movie>
 
@@ -57,12 +64,15 @@ const OurWork = () => {
         ref={element2}
         variants={fade}
         animate={controls2}
-        initial="hidden"
+        initial='hidden'
       >
-        <h2>Good Times</h2>
-        <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/good-times">
-          <img src={goodtimes} alt="goodtimes" />
+        <h2>Beauty And The Beast</h2>
+        <motion.div variants={lineAnim} className='line'></motion.div>
+        <Link to='/work/good-times'>
+          <img
+            src='https://images.unsplash.com/photo-1588195542907-a0c0a2ac3312?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTgxfHxjYWtlfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+            alt='goodtimes'
+          />
         </Link>
       </Movie>
       <ScrollTop />

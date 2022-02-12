@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react';
 //Import Icons
-import clock from "../img/clock.svg";
-import diaphragm from "../img/diaphragm.svg";
-import money from "../img/money.svg";
-import teamwork from "../img/teamwork.svg";
-import home2 from "../img/home2.png";
+import clock from '../img/clock.svg';
+import diaphragm from '../img/diaphragm.svg';
+import money from '../img/money.svg';
+import teamwork from '../img/teamwork.svg';
+import home2 from '../img/home2.png';
 //Styles
-import { About, Description, Image } from "../styles";
-import styled from "styled-components";
-import { scrollReveal } from "../animation";
-import { useScroll } from "./useScroll";
+import { About, Description, Image } from '../styles';
+import styled from 'styled-components';
+import { scrollReveal } from '../animation';
+import { useScroll } from './useScroll';
 
 const ServicesSection = () => {
   const [element, controls] = useScroll();
@@ -17,7 +17,7 @@ const ServicesSection = () => {
     <Services
       variants={scrollReveal}
       animate={controls}
-      initial="hidden"
+      initial='hidden'
       ref={element}
     >
       <Description>
@@ -26,37 +26,40 @@ const ServicesSection = () => {
         </h2>
         <Cards>
           <Card>
-            <div className="icon">
-              <img alt="icon" src={clock} />
+            <div className='icon'>
+              <img alt='icon' src={clock} />
               <h3>Efficient</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>The cakes are made as soon as the order came to me.</p>
           </Card>
           <Card>
-            <div className="icon">
-              <img alt="icon" src={teamwork} />
+            <div className='icon'>
+              <img alt='icon' src={teamwork} />
               <h3>Teamwork</h3>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
           </Card>
           <Card>
-            <div className="icon">
-              <img alt="icon" src={diaphragm} />
+            <div className='icon'>
+              <img alt='icon' src={diaphragm} />
               <h3>Diaphragm</h3>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
           </Card>
           <Card>
-            <div className="icon">
-              <img alt="icon" src={money} />
+            <div className='icon'>
+              <img alt='icon' src={money} />
               <h3>Affordable</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>The cakes are not exepnsive at all.</p>
           </Card>
         </Cards>
       </Description>
       <Image>
-        <img alt="camera" src={home2} />
+        <img
+          alt='camera'
+          src='https://images.unsplash.com/photo-1621303837174-89787a7d4729?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNha2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'
+        />
       </Image>
     </Services>
   );
@@ -69,6 +72,7 @@ const Services = styled(About)`
   p {
     width: 70%;
     padding: 2rem 0rem 4rem 0rem;
+    color: #42929d;
   }
 `;
 const Cards = styled.div`
@@ -85,8 +89,8 @@ const Card = styled.div`
     align-items: center;
     h3 {
       margin-left: 1rem;
-      background: white;
-      color: black;
+      color: #42929d;
+      font-weight: 900;
       padding: 1rem;
     }
   }
