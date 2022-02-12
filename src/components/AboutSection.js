@@ -1,6 +1,4 @@
 import React from 'react';
-import home1 from '../img/home1.png';
-import cake2 from '../img/cake2.jpg';
 import { About, Description, Image, Hide } from '../styles';
 //Framer Motion
 import { motion } from 'framer-motion';
@@ -13,7 +11,7 @@ const AboutSection = () => {
       <Description>
         <motion.div>
           <Hide>
-            <motion.h2 variants={titleAnim}>We work to make</motion.h2>
+            <motion.h2 variants={titleAnim}>I work to make</motion.h2>
           </Hide>
           <Hide>
             <motion.h2 variants={titleAnim}>your day become</motion.h2>
@@ -25,13 +23,17 @@ const AboutSection = () => {
           </Hide>
         </motion.div>
         <motion.p variants={fade}>
-          Contact us for any home made cake that you need for any type of
-          activity. We have professionals with amazing skills.
+          Contact me for any home made cake that you need for any type of
+          activity 🍰.
         </motion.p>
-        <motion.button variants={fade}>Contact Us</motion.button>
+        <motion.button variants={fade}>Contact Me</motion.button>
       </Description>
       <Image>
-        <motion.img variants={photoAnim} src={home1} alt='guy with a camera' />
+        <motion.img
+          variants={photoAnim}
+          src='https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FrZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+          alt='birthday cake'
+        />
       </Image>
       <Wave />
     </About>
